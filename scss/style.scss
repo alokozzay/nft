@@ -1,0 +1,224 @@
+.container {
+    max-width: 1145px;
+    padding: 0 15px;
+    margin: 0 auto;
+    &_product {
+        max-width: 1145px;
+    }
+}
+
+.main-header{
+    background-image: url(../img/main_bg.png);
+    background-repeat: no-repeat;
+    background-position: right 0 top 36px;
+}
+.header {
+    margin-top: 30px;
+    margin-bottom: 190px;
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__items {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        font-size: 18px;
+        line-height: 26px;
+        margin-right: 45px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+        
+    }
+    &__link {
+        color: #2E1720;
+        opacity: 0.6;
+        transition: 0.3s all ease;
+        &_active {
+            opacity: 1;
+        }
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__btn {
+        padding: 10px 20px;
+        background-color: #F10C6D;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 18px;
+        transition: 0.3s all ease;
+        &:hover {
+            background-color: #b60750;
+        }
+    }
+    
+}
+.main {
+    max-width: 557px;
+    padding-bottom: 190px;
+    &__title {
+        font-size: 70px;
+        line-height: 130%;
+        color: #2E1720;
+        font-weight: 700;
+        &-span {
+            color: #F10C6D;
+            position: relative;
+            display: inline-block;
+            &::before {
+                content: "NFTS";
+                position: absolute;
+                left: 2px;
+                top: 2px;
+                opacity: 0.6;
+                -webkit-text-stroke: 1px #000000;
+                color: transparent;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                background-image: url(../img/str_nft.svg);
+                width: 149px;
+                height: 15px;
+                top: 95%;
+                left: 0;
+            }
+        }
+    }
+    &__subtitle {
+        margin-top: 35px;
+        margin-bottom: 40px;
+        opacity: 0.6;
+        color: #2E1722;
+        line-height: 150%;
+    }
+    &__side {
+        display: flex;
+        align-items: center;
+        
+    }
+    &__btn {
+        background-color: #F10C6D;
+        transition: 0.3s all ease;
+        color: #fff;
+        padding: 15px 30px;
+        border-radius: 5px;
+        margin-right: 80px;
+        font-size: 18px;
+        &:hover {
+            background-color: #d3095d;
+        }
+    }
+    &__video-text {
+        margin-left: 15px;
+    }
+}
+
+.product {
+    padding-bottom: 70px;
+    &__title {
+        font-size: 39px;
+        line-height: 120%;
+        color: #2E1720;
+    }
+    &__subtitle {
+        font-size: 18px;
+        line-height: 150%;
+        color: #2E1720;
+        opacity: 0.6;
+        max-width: 480px;
+    }
+    &__flex-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    &__nav-img {
+        padding: 13px 12.16px 11px 13px;
+    }
+    &__nav-btn {
+        background: transparent;
+        border: 1px solid rgba(46, 23, 32, 0.3);
+        box-sizing: border-box;
+        border-radius: 3px;
+        &_prev {
+            margin-right: 20px;
+        }
+    }
+}
+
+.card {
+    padding: 20px 20px;
+    background: rgba(255, 255, 255, 0.13);
+    box-shadow: 4px 4px 10px 2px rgba(35, 67, 78, 0.1);
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    // &-wrapper {
+    //     padding: 0 15px;
+    // }
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 14.7px;
+    }
+    &__user {
+        display: flex;
+        align-items: center;
+        &-info {
+            margin-left: 8px;
+        }
+        &-name {
+            font-size: 14px;
+            line-height: 120%;
+            color: #2E1720;
+        }
+        &-nick {
+            font-size: 10px;
+            line-height: 120%;
+            color: #2E1720;
+            opacity: 0.6;
+            margin-top: 4px;
+        }
+    }
+    &__footer_info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    &__nft {
+        &-name {
+            font-size: 18px;
+            line-height: 120%;
+            font-weight: 700;
+            color: #2E1720;
+            margin-top: 14px;
+            
+        }
+        &-info {
+            font-size: 16px;
+            line-height: 120%;
+            color: #2E1720;
+            opacity: 0.6;
+            margin-bottom: 7px;
+            &_value {
+                font-size: 14px;
+                line-height: 120%;
+                font-weight: 700;
+                color: #2E1720;
+            }
+        }
+    }
+}
+.swiper {
+    margin-top: 35px;
+}
